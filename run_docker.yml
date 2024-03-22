@@ -1,0 +1,5 @@
+- hosts: localhost
+  tasks:
+  - name: Run docker-compose
+    ansible.builtin.shell: docker compose build && docker compose up -d
+
